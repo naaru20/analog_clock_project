@@ -1,18 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Grechen+Fuemen&family=Nunito:wght@300&family=Pacifico&family=Playfair+Display:ital@1&family=Raleway:wght@200;300;600&family=Source+Sans+Pro:wght@300&family=Supermercado+One&display=swap');
 *{
     margin: 0;
     padding: 0;
+    background: yellow;
 }
 
 .container{
-    height: 40vw;
-    width: 40vw;
+    height: 39vw;
+    width: 39vw;
     position: relative;
+    top: 5%;
     display: flex;
     margin: auto;
-    background-image: url('/clock.png');
+    /* background-image: url('/clock.png'); */
     background-size: 100%;
     background-repeat: no-repeat;
-    
+    border-radius: 8vw;
+    border: 10px solid black;    
+}
+
+.extra{
+    height: 36vw;
+    width: 36vw;
+    border: 6px solid black;
+    border-radius: 20vw;
+    position: absolute;
+    top: 3%;
+    left: 3%;
+}
+
+.centre{
+    height: 3vw;
+    width: 3vw;
+    background: #2b0202;
+    border-radius: 20vw;
+    position: absolute;
+    top: 45.5%;
+    left: 45.6%;
+}
+
+.num1,.num2,.num3, .num4{
+    font-weight: 900;
+    font-size: 3.5vw;
+    font-family: 'Supermercado One', cursive;
+}
+
+.num1{
+    position: absolute;
+    top: 5%;
+    left: 46%;
+}
+.num2{
+    position: absolute;
+    top: 43%;
+    right: 8%;
+}
+.num3{
+    position: absolute;
+    bottom: 5%;
+    left: 47%;
+}
+.num4{
+    position: absolute;
+    top: 43%;
+    left: 8%;
 }
 #hour, #minute, #second{
     position: absolute;
@@ -41,4 +92,11 @@
     left: 48.85%;
     height: 37%;
     width: 2%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .extra{
+        display: none;
+    }
+    
 }
